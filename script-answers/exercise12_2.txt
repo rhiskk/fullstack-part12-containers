@@ -1,0 +1,19 @@
+Script started on Tue May 10 16:15:04 2022
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/script-answers[0m[27m[24m[Jhiski@Hiski-MacBook-Pro script-answers % [K[?2004hddocker container run -it ubuntu bash[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K125a6e411906: Pulling fs layer [1B[1A[2K125a6e411906: Downloading  310.5kB/30.42MB[1B[1A[2K125a6e411906: Downloading  1.874MB/30.42MB[1B[1A[2K125a6e411906: Downloading  4.361MB/30.42MB[1B[1A[2K125a6e411906: Downloading  6.536MB/30.42MB[1B[1A[2K125a6e411906: Downloading  8.719MB/30.42MB[1B[1A[2K125a6e411906: Downloading  10.59MB/30.42MB[1B[1A[2K125a6e411906: Downloading  12.47MB/30.42MB[1B[1A[2K125a6e411906: Downloading  14.33MB/30.42MB[1B[1A[2K125a6e411906: Downloading   16.2MB/30.42MB[1B[1A[2K125a6e411906: Downloading  18.08MB/30.42MB[1B[1A[2K125a6e411906: Downloading  19.95MB/30.42MB[1B[1A[2K125a6e411906: Downloading  21.51MB/30.42MB[1B[1A[2K125a6e411906: Downloading  24.32MB/30.42MB[1B[1A[2K125a6e411906: Downloading   26.2MB/30.42MB[1B[1A[2K125a6e411906: Downloading  28.06MB/30.42MB[1B[1A[2K125a6e411906: Downloading  29.93MB/30.42MB[1B[1A[2K125a6e411906: Verifying Checksum [1B[1A[2K125a6e411906: Download complete [1B[1A[2K125a6e411906: Extracting  327.7kB/30.42MB[1B[1A[2K125a6e411906: Extracting  2.949MB/30.42MB[1B[1A[2K125a6e411906: Extracting  5.571MB/30.42MB[1B[1A[2K125a6e411906: Extracting  7.864MB/30.42MB[1B[1A[2K125a6e411906: Extracting  9.503MB/30.42MB[1B[1A[2K125a6e411906: Extracting  12.12MB/30.42MB[1B[1A[2K125a6e411906: Extracting  15.07MB/30.42MB[1B[1A[2K125a6e411906: Extracting  17.69MB/30.42MB[1B[1A[2K125a6e411906: Extracting  20.97MB/30.42MB[1B[1A[2K125a6e411906: Extracting  23.59MB/30.42MB[1B[1A[2K125a6e411906: Extracting  25.23MB/30.42MB[1B[1A[2K125a6e411906: Extracting  26.54MB/30.42MB[1B[1A[2K125a6e411906: Extracting  28.84MB/30.42MB[1B[1A[2K125a6e411906: Extracting  30.15MB/30.42MB[1B[1A[2K125a6e411906: Extracting  30.42MB/30.42MB[1B[1A[2K125a6e411906: Pull complete [1BDigest: sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@0043f15b5c1c: /root@0043f15b5c1c:/# [K]0;root@0043f15b5c1c: /root@0043f15b5c1c:/# mkdir [7m/usr/src/app[27m/usr/src/app
+[?2004l[?2004h]0;root@0043f15b5c1c: /root@0043f15b5c1c:/# touch [7m/usr/src/app/index.js[27m/usr/src/app/index.js
+[?2004l[?2004h]0;root@0043f15b5c1c: /root@0043f15b5c1c:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/script-answers[0m[27m[24m[Jhiski@Hiski-MacBook-Pro script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Tue May 10 16:15:44 2022
