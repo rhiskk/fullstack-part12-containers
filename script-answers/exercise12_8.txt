@@ -1,0 +1,81 @@
+Script started on Wed May 11 15:42:42 2022
+Restored session: Wed May 11 15:40:16 EEST 2022
+[1m[7m%[27m[1m[0m                                                                                                                                 ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/script-answers[0m[27m[24m[Jhiski@Hiski-MacBook-Pro script-answers % [K[?2004hccd ../todo-app[1m/[0m[0m/todo-backend[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                 ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/todo-app/todo-backend[0m[27m[24m[Jhiski@Hiski-MacBook-Pro todo-backend % [K[?2004h[7mdocker-compose -f docker-compose.dev.yml up -d[27m[46D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27m-[27mf[27m [27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m.[27md[27me[27mv[27m.[27my[27mm[27ml[27m [27mu[27mp[27m [27m-[27md[?2004l
+[1A[1B[0G[?25l[+] Running 1/0
+[34m ⠿ Network todo-backend_default    Created                                                                                  0.0s
+[0m[37m ⠋ Container todo-backend-mongo-1  Creating                                                                                 0.0s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+[34m ⠿ Network todo-backend_default    Created                                                                                  0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                                                                 0.1s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+[34m ⠿ Network todo-backend_default    Created                                                                                  0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                                                                 0.2s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+[34m ⠿ Network todo-backend_default    Created                                                                                  0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                                                                 0.3s
+[0m[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+[34m ⠿ Network todo-backend_default    Created                                                                                  0.0s
+[0m[34m ⠿ Container todo-backend-mongo-1  Started                                                                                  0.4s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                                                                 ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/todo-app/todo-backend[0m[27m[24m[Jhiski@Hiski-MacBook-Pro todo-backend % [K[?2004hddocker container ls -a[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                     NAMES
+8e064e4eedf4   mongo     "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                                 ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/todo-app/todo-backend[0m[27m[24m[Jhiski@Hiski-MacBook-Pro todo-backend % [K[?2004hddocker container exec -it 8e mongo -u root -p example[?2004l
+MongoDB shell version v5.0.8
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("872af7e7-faf4-4ee2-8c63-0c3c4a48e23a") }
+MongoDB server version: 5.0.8
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> shpo[3G[Jshp[6G[3G[Jsh[5Gow dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_dt[3G[Juse the_d[12Gatabae[3G[Juse the_databa[17Gse[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db [3G[Jdb[5G.todos.insertOne({})[3G[Jdb.todos.insertOne[1;34m([0m{})[24G[3G[Jdb.todos.insertOne([1;34m{[0m})[23G[3G[Jdb.todos.insertOne([1;34m{[0m })[24G[3G[Jdb.todos.insertOne({ })[23G[3G[Jdb.todos.insertOne([1;34m{[0m })[24G[3G[Jdb.todos.insertOne([1;34m{[0m "})[25G[3G[Jdb.todos.insertOne([1;34m{[0m "t})[26G[3G[Jdb.todos.insertOne([1;34m{[0m "te})[27G[3G[Jdb.todos.insertOne([1;34m{[0m "tes})[28G[3G[Jdb.todos.insertOne([1;34m{[0m "test})[29G[3G[Jdb.todos.insertOne([1;34m{[0m "tes})[28G[3G[Jdb.todos.insertOne([1;34m{[0m "te})[27G[3G[Jdb.todos.insertOne([1;34m{[0m "tex})[28G[3G[Jdb.todos.insertOne([1;34m{[0m "text})[29G[3G[Jdb.todos.insertOne([1;34m{[0m "text"})[30G[3G[Jdb.todos.insertOne([1;34m{[0m "text" })[31G[3G[Jdb.todos.insertOne([1;34m{[0m "text" :})[32G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : })[33G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "})[34G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "t})[35G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "to})[36G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "tod})[37G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo})[38G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo"})[39G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo",})[40G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", })[41G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "})[42G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "d})[43G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "do})[44G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "don})[45G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done})[46G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done"})[47G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" })[48G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" :})[49G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : })[50G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : d})[51G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : })[50G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : f})[51G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : fa})[52G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : fal})[53G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : fals})[54G[3G[Jdb.todos.insertOne([1;34m{[0m "text" : "todo", "done" : false})[55G[3G[Jdb.todos.insertOne({ "text" : "todo", "done" : false})[57G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("627bafbc7deff9bdd340e2a5")
+}
+> [3G[Jdb.todos.insertOne({ "text" : "todo", "done" : false})[57G[3G[Jshow collections[19G[3G[Jshow collections[19G
+todos
+> db [3G[Jdb[5G.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("627b5df6f156c2f21a83587d"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("627b5df6f156c2f21a83587e"), "text" : "Learn about containers", "done" : true }
+{ "_id" : ObjectId("627bacf8e402746280b1cbae"), "text" : "test", "done" : false }
+{ "_id" : ObjectId("627bafbc7deff9bdd340e2a5"), "text" : "todo", "done" : false }
+> exit[3G[Jexit[7G
+bye
+[1m[7m%[27m[1m[0m                                                                                                                                 ]7;file://Hiski-MacBook-Pro.local/Users/hiski/Koulu/fullstack-part12-containers/todo-app/todo-backend[0m[27m[24m[Jhiski@Hiski-MacBook-Pro todo-backend % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Wed May 11 15:45:05 2022
